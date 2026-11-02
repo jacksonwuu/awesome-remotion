@@ -1,0 +1,74 @@
+name: Link Check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 2
+            --timeout 30
+            --accept '200,204,206,429'
+            --exclude 'https://www.npmjs.com/.*'
+            --exclude 'https://medium.com/.*'
+            --exclude 'https://x.com/.*'
+            --exclude 'https://twitter.com/.*'
+            --exclude 'https://www.instagram.com/.*'
+            --exclude 'https://www.linkedin.com/.*'
+            --exclude 'https://www.youtube.com/.*'
+            --exclude 'https://discord.*'
+            --exclude 'https://remotion.dev/discord'
+            --exclude 'https://remotion.dev/search'
+            --exclude 'https://remotion-helloworld.vercel.app/.*'
+            '**/*.md'
+          format: markdown
+          output: ./lychee-report.md
+          fail: false
+
+      - name: Open issue on failures
+        if: steps.lychee.outputs.exit_code != 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('./lychee-report.md', 'utf8').slice(0, 60000);
+            const title = 'Link check: broken links found';
+            const body = 'Weekly link check found broken links.\n\n' + report;
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+            });
+            const existing = issues.data.find(i => i.title === title);
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['broken-link'],
+              });
+            }

@@ -80,8 +80,6 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 - [@remotion/bundler](https://www.npmjs.com/package/@remotion/bundler) - 用 Webpack 打包合成。
 - [@remotion/player](https://www.npmjs.com/package/@remotion/player) - 在 React 应用中嵌入实时 Remotion 预览。
 - [@remotion/studio](https://www.npmjs.com/package/@remotion/studio) - 与 Remotion Studio 交互的 API。
-- [@remotion/studio-server](https://www.npmjs.com/package/@remotion/studio-server) - 以服务器后端方式运行 Remotion Studio。
-- [@remotion/browser-bundler](https://www.npmjs.com/package/@remotion/browser-bundler) - 在浏览器中编译虚拟 Remotion 项目。
 - [@remotion/web-renderer](https://www.npmjs.com/package/@remotion/web-renderer) - 完全在浏览器中渲染视频。
 
 ### 渲染
@@ -101,7 +99,6 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 - [@remotion/gif](https://www.npmjs.com/package/@remotion/gif) - 在 Remotion 视频中嵌入 GIF。
 - [@remotion/webcodecs](https://www.npmjs.com/package/@remotion/webcodecs) - 在浏览器中转换媒体。
 - [@remotion/canvas-capture](https://www.npmjs.com/package/@remotion/canvas-capture) - 把画布中的 HTML 内容捕获为视频。
-- [@remotion/preload](https://www.npmjs.com/package/@remotion/preload) - 渲染前预加载资源。
 - [@remotion/video-matting](https://www.npmjs.com/package/@remotion/video-matting) - 在浏览器中把视频分离为背景层与透明前景层。
 
 ### 文本与字幕
@@ -155,8 +152,6 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 - [@remotion/codemods](https://www.npmjs.com/package/@remotion/codemods) - 升级 Remotion 项目的代码转换脚本。
 - [@remotion/player-a11y](https://www.npmjs.com/package/@remotion/player-a11y) - Player 的无障碍封装，符合 WCAG 控制。
 - [@remotion/drag-and-drop](https://www.npmjs.com/package/@remotion/drag-and-drop) - 构建与解析拖放载荷。
-- [@remotion/canvas](https://www.npmjs.com/package/@remotion/canvas) - 构建创作界面的实验性组件。
-- [@remotion/sdk](https://www.npmjs.com/package/@remotion/sdk) - 构建 Remotion 创作工具的实验性组件。
 
 ## 模板
 
@@ -214,7 +209,7 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 - [SwiftClip](https://github.com/zz41354899/SwiftClip) - 30 个生产可用的 Remotion 模板。
 - [RenderComp Free](https://github.com/RenderComp/free-remotion-templates) - 50 个 MIT 协议的 Remotion 模板。
 - [cliphou.se](https://cliphou.se/remotion-templates) - 免费 MIT-0 模板，文字与颜色可编辑。
-- [Lexington Motion](https://lexingtonthemes.com/remotion) - 适配社交媒体的无缝循环宣传模板。
+- [Lexington Motion](https://lexingtonthemes.com/remotion) - 适配社交媒体的无缝循环宣传模板（付费）。
 
 ## 示例
 
@@ -251,9 +246,7 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 - [Remotion Trailer](https://github.com/remotion-dev/trailer) - Remotion 官方宣传片。
 - [Remotion Wrapped](https://github.com/JonnyBurger/remotion-wrapped) - Remotion 创始人复刻的 Spotify Wrapped 动画。
 - [Fireship-Style Videos](https://github.com/wcandillon/remotion-fireship) - 用 React 和 Remotion 复刻 Fireship 风格视频的完整源码。
-- [Recorder](https://github.com/remotion-dev/recorder) - 纯 JavaScript 打造的视频制作工具。
 - [Podcast Maker](https://github.com/FelippeChemello/podcast-maker) - 用动效与文字转语音把新闻简报变成每日 YouTube 视频。
-- [Stargazer](https://github.com/pomber/stargazer) - 仓库达到星标里程碑时，用视频展示星标用户。
 - [Mockoops](https://github.com/Just-Moh-it/Mockoops) - 把无聊的屏幕录像变成精美的设备样机动画。
 - [Product Hunt Today](https://github.com/Kamigami55/product-hunt-today) - 每日 Product Hunt 回顾视频。
 - [Remotion Weather](https://github.com/florentpergoud/remotion-weather) - 法国天气预报视频生成器。
@@ -273,7 +266,6 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 
 ## 工具
 
-- [Remotion CLI](https://www.remotion.dev/docs/cli) - 用于预览、渲染与管理项目的命令行界面。
 - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=KarelNagel.remotion-vscode) - 在 VS Code 内预览与检查合成。
 - [Agent Skills](https://www.remotion.dev/docs/ai/skills) - 教编程代理使用 Remotion 的官方技能。
 - [Claude Code Plugin](https://github.com/remotion-dev/claude-code-plugin) - 官方 Remotion 技能打包的 Claude Code 插件。

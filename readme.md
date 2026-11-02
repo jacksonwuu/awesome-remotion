@@ -80,8 +80,6 @@ Official npm packages published under the `@remotion` scope.
 - [@remotion/bundler](https://www.npmjs.com/package/@remotion/bundler) - Bundle compositions with Webpack.
 - [@remotion/player](https://www.npmjs.com/package/@remotion/player) - Embed a live Remotion preview in a React app.
 - [@remotion/studio](https://www.npmjs.com/package/@remotion/studio) - APIs for interacting with Remotion Studio.
-- [@remotion/studio-server](https://www.npmjs.com/package/@remotion/studio-server) - Run Remotion Studio with a server backend.
-- [@remotion/browser-bundler](https://www.npmjs.com/package/@remotion/browser-bundler) - Compile virtual Remotion projects in the browser.
 - [@remotion/web-renderer](https://www.npmjs.com/package/@remotion/web-renderer) - Render videos entirely in the browser.
 
 ### Rendering
@@ -89,7 +87,7 @@ Official npm packages published under the `@remotion` scope.
 - [@remotion/lambda](https://www.npmjs.com/package/@remotion/lambda) - Render videos on AWS Lambda.
 - [@remotion/cloudrun](https://www.npmjs.com/package/@remotion/cloudrun) - Render videos on Google Cloud Run.
 <!--lint ignore awesome-spell-check-->
-- [Vercel Sandbox](https://www.npmjs.com/package/@remotion/vercel) - Render videos on Vercel Sandbox.
+- [@remotion/vercel](https://www.npmjs.com/package/@remotion/vercel) - Render videos on Vercel Sandbox.
 - [@remotion/serverless](https://www.npmjs.com/package/@remotion/serverless) - A runtime for distributed rendering.
 - [@remotion/licensing](https://www.npmjs.com/package/@remotion/licensing) - Manage your Remotion Pro license.
 
@@ -102,7 +100,6 @@ Official npm packages published under the `@remotion` scope.
 - [@remotion/gif](https://www.npmjs.com/package/@remotion/gif) - Embed GIFs in a Remotion video.
 - [@remotion/webcodecs](https://www.npmjs.com/package/@remotion/webcodecs) - Convert media in the browser.
 - [@remotion/canvas-capture](https://www.npmjs.com/package/@remotion/canvas-capture) - Capture HTML-in-canvas content as a video.
-- [@remotion/preload](https://www.npmjs.com/package/@remotion/preload) - Preload assets before rendering.
 - [@remotion/video-matting](https://www.npmjs.com/package/@remotion/video-matting) - Separate a video into a base layer and a transparent foreground.
 
 ### Text and Captions
@@ -156,8 +153,6 @@ Official npm packages published under the `@remotion` scope.
 - [@remotion/codemods](https://www.npmjs.com/package/@remotion/codemods) - Codemods for upgrading Remotion projects.
 - [@remotion/player-a11y](https://www.npmjs.com/package/@remotion/player-a11y) - Accessible wrapper around the Player with WCAG controls.
 - [@remotion/drag-and-drop](https://www.npmjs.com/package/@remotion/drag-and-drop) - Build and parse drag-and-drop payloads.
-- [@remotion/canvas](https://www.npmjs.com/package/@remotion/canvas) - Experimental primitives for building authoring interfaces.
-- [@remotion/sdk](https://www.npmjs.com/package/@remotion/sdk) - Experimental primitives for building Remotion authoring tools.
 
 ## Templates
 
@@ -215,7 +210,7 @@ Community templates:
 - [SwiftClip](https://github.com/zz41354899/SwiftClip) - 30 production-ready Remotion templates.
 - [RenderComp Free](https://github.com/RenderComp/free-remotion-templates) - 50 MIT-licensed Remotion templates.
 - [cliphou.se](https://cliphou.se/remotion-templates) - Free MIT-0 templates with editable text and colors.
-- [Lexington Motion](https://lexingtonthemes.com/remotion) - Looping promo templates for social media.
+- [Lexington Motion](https://lexingtonthemes.com/remotion) - Looping promo templates for social media (paid).
 
 ## Examples
 
@@ -252,9 +247,7 @@ Community templates:
 - [Remotion Trailer](https://github.com/remotion-dev/trailer) - The official promotional video for Remotion.
 - [Remotion Wrapped](https://github.com/JonnyBurger/remotion-wrapped) - A Spotify Wrapped-style animation built by Remotion's founder.
 - [Fireship-Style Videos](https://github.com/wcandillon/remotion-fireship) - Recreate Fireship-style videos with React and Remotion.
-- [Recorder](https://github.com/remotion-dev/recorder) - A video production tool built entirely in JavaScript.
 - [Podcast Maker](https://github.com/FelippeChemello/podcast-maker) - Turn newsletters into narrated videos with motion graphics and text-to-speech.
-- [Stargazer](https://github.com/pomber/stargazer) - Celebrate a repository's star milestone with a video of its stargazers.
 - [Mockoops](https://github.com/Just-Moh-it/Mockoops) - Create device mockup animations from screen recordings.
 - [Product Hunt Today](https://github.com/Kamigami55/product-hunt-today) - A daily Product Hunt recap video.
 - [Remotion Weather](https://github.com/florentpergoud/remotion-weather) - A weather forecast video creator.
@@ -274,7 +267,6 @@ Community templates:
 
 ## Tools
 
-- [Remotion CLI](https://www.remotion.dev/docs/cli) - The command-line interface for previewing, rendering, and managing projects.
 - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=KarelNagel.remotion-vscode) - Preview and inspect compositions inside VS Code.
 - [Agent Skills](https://www.remotion.dev/docs/ai/skills) - Official skills that teach coding agents how to use Remotion.
 - [Claude Code Plugin](https://github.com/remotion-dev/claude-code-plugin) - The official Remotion skills packaged as a Claude Code plugin.
