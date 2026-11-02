@@ -1,5 +1,7 @@
 # Awesome Remotion [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+[English](readme.md) | **简体中文**
+
 > A curated list of awesome resources for building videos with React and Remotion.
 
 Remotion is a framework for creating videos programmatically with React. You write components, animate them with hooks, and render them to MP4, WebM, GIF, or still images — locally, on a server, or in the cloud. This list collects the official tooling, community packages, templates, examples, and learning material that help you ship faster.
