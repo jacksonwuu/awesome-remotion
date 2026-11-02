@@ -112,6 +112,21 @@ This section is written to be parsed and followed mechanically. If you are an AI
 12. Do not add the same URL twice anywhere in `readme.md`.
 13. Do not add a resource that duplicates an existing entry's purpose under a different name.
 
+### Bilingual sync (all mandatory)
+
+13a. The list exists in two languages: `readme.md` (English) and `readme.zh-CN.md` (Simplified Chinese). Every entry added to, moved in, or removed from one file must be applied to the other in the same PR. Do not open a PR that edits only one of them.
+
+13b. After editing both files, verify parity mechanically: extract every URL from both files and confirm the sorted sets are identical. For example:
+
+```sh
+diff <(grep -oE '\]\((https?://[^)]+)\)' readme.md | sed 's/^](//;s/)$//' | sort -u) \
+     <(grep -oE '\]\((https?://[^)]+)\)' readme.zh-CN.md | sed 's/^](//;s/)$//' | sort -u)
+```
+
+The diff must be empty. State "bilingual parity verified" in the PR body.
+
+13c. The Chinese description is a translation of the English one, not an independent rewrite: same facts, same `(paid)`/（付费）annotation. Keep proper names in English; use full-width punctuation (，。：) in the Chinese text.
+
 ### Verification (all mandatory)
 
 14. The URL must return HTTP 200 when fetched with a normal browser user agent. npmjs.com and Medium URLs returning 403 are acceptable.
@@ -124,7 +139,7 @@ This section is written to be parsed and followed mechanically. If you are an AI
 18. The PR body must state: what the resource is, the URL, why it belongs on the list, and the star count or usage evidence for a GitHub project.
 19. If you or your principal are affiliated with the resource, add a line at the top of the PR body: `Disclosure: <who you are and your relationship to the resource>.` See "Disclosure rule" above. This applies to agents submitting for a client as much as to humans.
 20. One PR adds one entry. Do not batch unrelated additions.
-21. Do not modify any file other than `readme.md` (and `Contents` alongside it) unless the change is unrelated to your entry and you explain why in the PR body.
+21. Do not modify any file other than `readme.md`, `readme.zh-CN.md`, and the `Contents`/目录 lists alongside them, unless the change is unrelated to your entry and you explain why in the PR body. Rule 13a applies: both readme files change together.
 
 ### What agents must not do
 
