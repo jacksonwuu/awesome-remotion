@@ -263,6 +263,7 @@ Remotion 是一个用 React 以代码方式创作视频的框架：你编写组�
 - [Short Video Maker](https://github.com/gyoridavid/short-video-maker) - 通过 MCP 与 REST API 为 TikTok、Reels 和 YouTube 制作短视频。
 - [Cinetic](https://github.com/Leonxlnx/cinetic) - 由编程代理执导的电影感发布片与动效设计。
 - [Vanta](https://github.com/itsjwill/vanta) - 开源 AI 视频引擎，支持声音克隆、数字人、字幕与 100+ 转场。
+- [Formato](https://useformato.com) - 面向 Claude Code、Codex 和 Cursor 的视频格式包，使用 Remotion 在本地渲染（付费）。
 
 ## 工具
 

@@ -264,6 +264,7 @@ Community templates:
 - [Short Video Maker](https://github.com/gyoridavid/short-video-maker) - Create shorts for TikTok, Reels, and YouTube with MCP and a REST API.
 - [Cinetic](https://github.com/Leonxlnx/cinetic) - Cinematic launch films and motion design directed by a coding agent.
 - [Vanta](https://github.com/itsjwill/vanta) - An open-source AI video engine with voice cloning, avatars, captions, and 100+ transitions.
+- [Formato](https://useformato.com) - Video format packs for Claude Code, Codex and Cursor that render locally with Remotion (paid).
 
 ## Tools
 
